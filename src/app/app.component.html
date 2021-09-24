@@ -1,0 +1,15 @@
+<h1>Wesley Nascimento Silva<br />RA 0050831921032</h1>
+
+<h2>BitCoin Rates</h2>
+<table border="1">
+  <tr>
+    <th>Data/hora</th>
+    <th>USD</th>
+    <th>BRL</th>
+  </tr>
+  <tr *ngFor="let rat of this.bitCoin.bitCoinRates">
+    <td>{{ rat.time.updated }}</td>
+    <td>{{ rat.bpi.USD.rate_float }}</td>
+    <td>{{ rat.bpi.BRL.rate_float }}</td>
+  </tr>
+</table>
